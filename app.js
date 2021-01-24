@@ -9,11 +9,12 @@ var flash = require('express-flash');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 
-var mysql = require('mysql');
-var conn = require('./lib/db');
+// var mysql = require('mysql');
+// var conn = require('./lib/db');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var productsRouter = require('./routes/products');
 
 var app = express();
 

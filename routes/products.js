@@ -26,7 +26,7 @@ router.post('/create', function(req,res,next){
     req.assert('price', 'Price is Required').notEmpty()
     var errors = req.validationErrors()
     if(!errors){
-        var products = {
+        var product = {
             name: req.sanitize('name').escape().trim(),
             price: req.sanitize('price').escape().trim(),
         }
